@@ -1,0 +1,40 @@
+header.site-header {
+    border: 1px solid #ddd;
+    display: inline-block;
+    width: 100%;
+}
+
+.lab-header-left {
+    width: 300px;
+    float: left;
+}
+
+.lab-header-right {
+    float: left;
+    width: calc(100% - 301px);
+    border-left: 1px solid #ddd;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.lab-header-top {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+
+.lab-header-menu ul li {display: inline-block;}
+
+.lab-header-menu {
+    float: left;
+    width: calc(100% - 400px);
+}
+
+.logo {
+    padding: 22px;
+}
+
+.lab-header-main-manu {
+    padding: 20px;
+}
