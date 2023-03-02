@@ -1,40 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Kanit', sans-serif;
+}
+
 header.site-header {
-    border: 1px solid #ddd;
-    display: inline-block;
-    width: 100%;
+    display: flex;
 }
 
 .lab-header-left {
-    width: 300px;
-    float: left;
+    width: 350px;
+    padding: 20px;
 }
 
 .lab-header-right {
-    float: left;
-    width: calc(100% - 301px);
-    border-left: 1px solid #ddd;
+    width: calc(100% - 350px);
 }
 
-.logo img {
-    width: 100%;
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.lab-header-right {
+    display: flex;
+    flex-direction: column;
 }
 
 .lab-header-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10px 30px 60px;
     border-bottom: 1px solid #ddd;
-    padding: 20px;
-}
-
-.lab-header-menu ul li {display: inline-block;}
-
-.lab-header-menu {
-    float: left;
-    width: calc(100% - 400px);
-}
-
-.logo {
-    padding: 22px;
 }
 
 .lab-header-main-manu {
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px 0px 60px;
+}
+
+.lab-header-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header.site-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.lab-header-left {
+    border-right: 1px solid #ddd;
+}
+
+.lab-header-contact-number span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #999;
+}
+
+.lab-header-contact-number a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
+
+.lab-header-meta-info span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #999;
+}
+
+.lab-header-meta-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.lab-header-menu ul a {
+    text-decoration: unset;
+    color: #999;
+    font-weight: 700;
+}
+
+.lab-header-button a {
+    padding: 26px 45px;
+    background: #0E63FF;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.lab-header-menu {
+    display: flex;
+    align-items: center;
 }
